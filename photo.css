@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #333;
+
+}
+.container{
+    background-color: #00000057;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 3.5fr 1.5fr;
+    margin-top: 60px;
+  
+}
+.img{
+display: flex;
+flex-direction: column;
+gap: 50px;
+justify-content: center;
+align-items: center;
+}
+.img  .img-box img ,canvas{
+    max-width: 45vw;
+    max-height: 60vh;
+} 
+
+
+
+@media (max-width:991px) {
+    .img  .img-box img{
+        max-height: 57vh;
+max-width: 90%;
+margin: 15px 5%;
+ 
+    }
+}
+
+.upload label{
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px #fff dashed;
+    cursor: pointer;
+}  
+.upload input {
+ display: none;
+}
+.filters{
+background-color: black;
+padding: 15px;
+}
+.filters ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ 
+    padding: 10px;
+
+
+}
+.filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+}
+.filters ul li label{
+    color: #fff;
+
+}
+.filters ul li:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.filters ul li a ,span{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #060;
+    cursor: pointer;
+    border-radius: 13px;
+    width: 60px
+}
+.filters ul li a:hover,span:hover{
+opacity: 0.5;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+@media (max-width:991px) {
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+}

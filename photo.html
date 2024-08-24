@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+<div class="img">
+    <div class="img-box" id="imgbox">
+        <img src=""  id="imgu" alt="">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="upload">
+        <label for="upload">Upload</label>
+        <input type="file" id="upload">
+    </div>
+</div>
+<div class="filters">
+    <ul>
+        <li> 
+           <label for="Saturated">Saturated</label>
+           <input type="range" id="Saturate" min="0" max="200" value="100">
+        </li>
+        <li> 
+            <label for="Countrast">Countrast</label>
+            <input type="range" id="Countrast" min="0" max="200" value="100">
+         </li>
+         <li> 
+            <label for="">Brightness</label>
+            <input type="range" id="Brightness" min="0" max="200" value="100">
+         </li>
+         <li> 
+            <label for="Speia">Sepia</label>
+            <input type="range" id="Speia" min="0" max="200" value="100">
+         </li>
+         <li> 
+            <label for="Grayscale">Grayscale</label>
+            <input type="range" id="Grayscale" min="0" max="200" value="0">
+         </li>
+       
+         <li> 
+            <label for="Blur">Blur</label>
+            <input type="range" id="Blur" min="0" step="0.1" max="10" value="0">
+         </li>
+         <li> 
+            <label for="Hue-rotate">Hue Rotate</label>
+            <input type="range" id="Hue-rotate" min="0"  max="350" value="0">
+         </li>
+         <li>
+            <button>   <a  download="Image" id="Download" href="">Download</a> </button>
+          
+          <button>   <span id="reset"> Reset</span> </button>
+         </li>
+    </ul>
+</div>
+
+</div>
+
+
+
+
+
+
+    <script src="photo.js"></script>
+</body>
+</html>
